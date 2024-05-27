@@ -5,14 +5,14 @@ import { Spin as Hamburger } from "hamburger-react"
 import { email, instagram, linkedin, twitter } from "@/source/__env";
 import { FaEnvelope, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import { emptyLink, scrollHandler } from "../controllers/helpers";
+import { emptyLink, scrollHandler } from "../../controllers/helpers";
 
 const Header = () => {
   const [navIsOpen, setNavIsOpen] = useState(false)
 
   return (
     <>
-      <nav id="home" className="flex w-full justify-between px-6 lg:px-8 xl:px-10 py-10 bg-black md:gap-0 gap-2">
+      <nav id="home" className="flex w-full justify-between px-8 sm:px-16 lg:px-28 py-10 bg-black md:gap-0 gap-2">
         <div className="h-[43px]">
           <Link onClick={scrollHandler} href="/#home" className="flex items-center justify-center gap-3">
             <img src="/logo.png" alt="Davayte" title="Davayte" className="h-8" />
@@ -23,7 +23,7 @@ const Header = () => {
           <ul className="flex gap-12 items-center text-lg">
             <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#features">Features</Link></li>
             <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#how">How It Works</Link></li>
-            <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#fAQ">FAQ</Link></li>
+            <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#faq">FAQ</Link></li>
           </ul>
         </div>
         <div className="flex md:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
             <ul className="flex gap-[32px] flex-col items-start text-sm">
               <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#features">Features</Link></li>
               <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#how">How It Works</Link></li>
-              <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#fAQ">FAQ</Link></li>
+              <li><Link className="hover:opacity-50" onClick={e => scrollHandler(e, () => setNavIsOpen(false))} href="/#faq">FAQ</Link></li>
             </ul>
           </div>
           <div className="flex flex-col gap-[30px] text-center">
