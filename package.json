@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/uuid": "^9.0.8",
+    "framer-motion": "^11.2.6",
     "hamburger-react": "^2.5.1",
     "next": "14.2.3",
     "react": "^18",
