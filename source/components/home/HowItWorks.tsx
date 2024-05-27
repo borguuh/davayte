@@ -16,6 +16,7 @@ const vList = {
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.2,
+      delay: 0.8
     },
   },
   hidden: {
@@ -56,11 +57,11 @@ const HowItWorks = ({ steps }: HowItWorksProps) => {
           <motion.h2 initial={m.initial} whileInView={m.whileInView} transition={{
             delay: 0.3,
             duration: 0.5
-          }} className="font-playfair font-medium text-5xl">How It <span className="text-highlight">Works</span></motion.h2>
+          }} className="font-playfair font-medium text-3xl sm:text-4xl lg:text-5xl">How It <span className="text-highlight">Works</span></motion.h2>
           <motion.p initial={m.initial} whileInView={m.whileInView} transition={{
             delay: 0.6,
             duration: 0.5
-          }} className="pt-4">Follow these steps to get started</motion.p>
+          }} className="pt-2 sm:pt-4">Follow these steps to get started</motion.p>
         </div>
         <motion.div initial="hidden" whileInView={"visible"} variants={vList} className="w-full flex flex-col gap-8 pt-10">
           {steps.map((step, i) => <WorkStep key={v4()} i={i} {...step} />)}

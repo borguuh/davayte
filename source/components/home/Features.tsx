@@ -58,13 +58,13 @@ const Features = ({ feats }: FeaturesProps) => {
           <motion.h2 initial={m.initial} whileInView={m.whileInView} transition={{
             delay: 0.3,
             duration: 0.5
-          }} className="font-playfair font-medium text-5xl">What We <span className="text-highlight">Offer</span></motion.h2>
+          }} className="font-playfair font-medium text-3xl sm:text-4xl lg:text-5xl">What We <span className="text-highlight">Offer</span></motion.h2>
           <motion.p initial={m.initial} whileInView={m.whileInView} transition={{
             delay: 0.6,
             duration: 0.5
-          }} className="pt-4">We offer a wide range of features to help you create, manage, and grow your events.</motion.p>
+          }} className="pt-2 md:pt-4">We offer a wide range of features to help you create, manage, and grow your events.</motion.p>
         </div>
-        <motion.div className="w-full grid grid-cols-3 gap-8 pt-10" initial="hidden" whileInView={"visible"} variants={vList}>
+        <motion.div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10" initial="hidden" whileInView={"visible"} variants={vList}>
           {feats.map((feat, i) => <Feat key={v4()} i={i} {...feat} />)}
         </motion.div>
       </div>

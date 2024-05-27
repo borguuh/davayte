@@ -49,11 +49,11 @@ const FAQ = ({ faqs }: { faqs: any[] }) => {
 					<motion.h2 initial={m.initial} whileInView={m.whileInView} transition={{
 						delay: 0.3,
 						duration: 0.5
-					}} className="font-playfair font-medium text-5xl">Frequently Asked <span className="text-highlight">Questions</span></motion.h2>
+					}} className="font-playfair font-medium text-3xl sm:text-4xl lg:text-5xl">Frequently Asked <span className="text-highlight">Questions</span></motion.h2>
 					<motion.p initial={m.initial} whileInView={m.whileInView} transition={{
 						delay: 0.6,
 						duration: 0.5
-					}} className="pt-4">Find answers to all your questions about Davayte in our comprehensive FAQ section. Get all the information you need before you arrive, so you can enjoy a hassle-free stay.</motion.p>
+					}} className="pt-2 sm:pt-4">Find answers to all your questions about Davayte in our comprehensive FAQ section. Get all the information you need before you arrive, so you can enjoy a hassle-free stay.</motion.p>
 				</div>
 			</div>
 			<motion.div initial="hidden" whileInView={"visible"} variants={vList} className="w-full flex flex-col gap-8">
