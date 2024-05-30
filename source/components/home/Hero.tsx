@@ -1,5 +1,7 @@
 "use client"
+import { scrollHandler } from "@/source/controllers/helpers";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const m = {
   initial: {
@@ -28,10 +30,16 @@ const Hero = () => {
             delay: 0.3,
             duration: 0.5
           }} className="text-sm sm:text-base xl:text-lg opacity-70">Building Unique Communities, One Event at a time</motion.p>
+          <motion.div initial={m.initial} whileInView={m.whileInView} transition={{
+            delay: 0.6,
+            duration: 0.5
+          }} className="pt-3">
+            <Link onClick={scrollHandler} href='/#subscribe' className="bg-highlight px-10 inline-flex pt-3.5 pb-[13px] rounded-full shake text-black font-semibold">Get Started</Link>
+          </motion.div>
         </div>
         <div className="w-full flex flex-col items-center justify-center pt-2">
           <motion.img initial={m.initial} whileInView={m.whileInView} transition={{
-            delay: 0.6,
+            delay: 0.9,
             duration: 0.5
           }} src="/hero.svg" alt="Hero" className="max-w-[800px] w-full" />
         </div>
