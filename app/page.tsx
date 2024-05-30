@@ -3,6 +3,7 @@ import FAQ from "@/source/components/home/FAQ";
 import Features from "@/source/components/home/Features";
 import Hero from "@/source/components/home/Hero";
 import HowItWorks from "@/source/components/home/HowItWorks";
+import Subscribe from "@/source/components/home/Subscribe";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Features feats={feats} />
       <HowItWorks steps={steps} />
+      <Subscribe />
       <FAQ faqs={faqs} />
     </main>
   );

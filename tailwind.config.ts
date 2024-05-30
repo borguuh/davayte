@@ -37,7 +37,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "highlight": "#314fa5",
+        // "highlight": "#314fa5",
+        "highlight": "#dfcb62",
       }
     },
   },
